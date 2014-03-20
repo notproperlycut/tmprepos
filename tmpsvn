@@ -2,6 +2,7 @@
 set -e
 
 # Create a bare repo
+mkdir -p $1.svn && rmdir $1.svn
 svnadmin create $1.svn
 
 # Clone the repo
